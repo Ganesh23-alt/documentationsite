@@ -1,0 +1,84 @@
+[
+  {
+    "title": "Getting Started",
+    "id": 1,
+    "icon": "bi-book-half",
+    "color": "--bs-indigo",
+    "url": "/getting-started",
+    "children": [
+      {
+        "id": 5,
+        "title": "Introduction",
+        "url": "/introduction"
+      },
+      {
+        "id": 1,
+        "title": "Sign Up",
+        "url": "/sign-up"
+      },
+      {
+        "id": 7,
+        "title": "Plans",
+        "url": "/plans"
+      },
+      {
+        "id": 2,
+        "title": "Medical Departments",
+        "url": "/medical-departments"
+      },
+      {
+        "id": 3,
+        "title": "Custom Access URL",
+        "url": "/custom-access-url"
+      },
+      {
+        "id": 4,
+        "title": "Accessing Dashboard",
+        "url": "/accessing-your-dashboard"
+      }
+    ]
+  },
+  {
+    "title": "Dashboard",
+    "id": 1,
+    "icon": "bi-tools",
+    "color": "--bs-teal",
+    "url": "/dashboard"
+  },
+  {
+    "title": "Pricing",
+    "id": 2,
+    "icon": "bi-palette2",
+    "color": "--bs-cyan",
+    "url": "/pricing"
+  },
+  {
+    "title": "About",
+    "id": 3,
+    "icon": "bi-globe",
+    "color": "--bs-indigo",
+    "url": "/about",
+    "children": [
+      {
+        "id": 1,
+        "title": "Overview",
+        "url": "/overview"
+      },
+      {
+        "id": 2,
+        "title": "Team",
+        "url": "/team"
+      },
+      {
+        "id": 3,
+        "title": "Brand",
+        "url": "/brand"
+      },
+      {
+        "id": 4,
+        "title": "Translations",
+        "url": "/translations"
+      }
+    ]
+  }
+]

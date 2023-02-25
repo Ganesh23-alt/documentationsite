@@ -23,19 +23,20 @@ function App() {
   );
 
   useEffect(() => {
+
     if (documentation.length) {
       console.log(documentation)
       const newRoutes = [];
 
       documentation.forEach((doc) => {
         doc.children?.forEach((child) => {
-          const path = `${doc.url}${child.url}`;
+          const path = `${doc?.url}${child?.url}`;
           console.log(path);
 
           const Component = lazy(
             async () => await import("../pages" + path + ".js")
           );
-
+          console.log("./pages" + path + ".js")
           newRoutes.push(
             {
               path: doc.url + child.url,

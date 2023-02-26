@@ -1,59 +1,23 @@
 
-import './App.css';
+import './assets/css/starter.css';
 
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { useState, useEffect, lazy } from 'react';
+import { RouterProvider } from 'react-router-dom';
 
 
-import { useDocumentation } from './hooks/index';
-import { Sidebar } from './components/index';
+import { useDocumentation, useDynamicRoutes } from './hooks/index';
+import { Sidebar, Navbar } from './components/index';
 
 
 
 
 function App() {
   const { documentation, state } = useDocumentation();
-  const [router, setRouter] = useState(
-    createBrowserRouter([
-      {
-        path: "/",
-        element: <div>Loading</div>
-      }
-    ])
-  );
-
-  useEffect(() => {
-
-    if (documentation.length) {
-      console.log(documentation)
-      const newRoutes = [];
-
-      documentation.forEach((doc) => {
-        doc.children?.forEach((child) => {
-          const path = `${doc?.url}${child?.url}`;
-          console.log(path);
-
-          const Component = lazy(
-            async () => await import("../pages" + path + ".js")
-          );
-          console.log("./pages" + path + ".js")
-          newRoutes.push(
-            {
-              path: doc.url + child.url,
-              element: (
-                <Component />
-              ),
-            });
-        });
-      });
-
-      setRouter(createBrowserRouter([...newRoutes]));
-    }
-  }, [documentation]);
+  const { router } = useDynamicRoutes(documentation);
 
 
   return (
     <>
+      <Navbar />
       <div className="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
         <Sidebar documentation={documentation} state={state} />
         <RouterProvider router={router} />

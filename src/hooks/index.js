@@ -1,4 +1,5 @@
 import useDocumentation from "./useDocumentaition";
+import useDynamicRoutes from "./useDynamicRoutes";
 
 
-export { useDocumentation };
+export { useDocumentation, useDynamicRoutes };

@@ -8,7 +8,7 @@
     "children": [
       {
         "id": 5,
-        "title": "Introduction",
+        "title": "whyyyy",
         "url": "/introduction"
       },
       {
@@ -17,8 +17,13 @@
         "url": "/sign-up"
       },
       {
+        "id": 8,
+        "title": "Drug Department",
+        "url": "/drug-departments"
+      },
+      {
         "id": 7,
-        "title": "Plans",
+        "title": "whyyy",
         "url": "/plans"
       },
       {

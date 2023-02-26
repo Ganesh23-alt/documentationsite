@@ -12,11 +12,13 @@ const useDocumentaition = () => {
             setState('laoding');
             fetch("http://localhost:3000/documentation.json")
                 .then((resp) => resp.json())
+
                 .then((data) => {
                     setState('success');
                     localStorage.setItem('documentation', JSON.stringify(data));
                     setDocumentation(data);
                 })
+
         }
     }, [state])
     return {

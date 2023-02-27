@@ -8,7 +8,7 @@
     "children": [
       {
         "id": 5,
-        "title": "whyyyy",
+        "title": "introduction",
         "url": "/introduction"
       },
       {
@@ -22,15 +22,16 @@
         "url": "/drug-departments"
       },
       {
-        "id": 7,
-        "title": "whyyy",
-        "url": "/plans"
-      },
-      {
         "id": 2,
         "title": "Medical Departments",
         "url": "/medical-departments"
       },
+      {
+        "id": 7,
+        "title": "plans",
+        "url": "/plans"
+      },
+
       {
         "id": 3,
         "title": "Custom Access URL",

@@ -1,5 +1,7 @@
 import React from "react";
 import DocumentationItemLayout from "../../layouts/documentation";
+import { welcomepage, basicdetails, organizationdetails, organizationaddress, choosedepts, chooseplans, emailconfirmation } from "../../assets/images/index.js";
+
 
 export default function Signup() {
   const content = (
@@ -16,7 +18,7 @@ export default function Signup() {
           <img
             width={750}
             style={{ marginBottom: 16, marginTop: 16 }}
-            src="/signup/welcome-page.png"
+            src={welcomepage}
             alt="banner"
           />
         </li>
@@ -26,7 +28,7 @@ export default function Signup() {
           <img
             width={750}
             style={{ marginBottom: 16, marginTop: 16 }}
-            src="/signup/basic-details.png"
+            src={basicdetails}
             alt="banner"
           />
         </li>
@@ -37,7 +39,7 @@ export default function Signup() {
           <img
             width={750}
             style={{ marginBottom: 16, marginTop: 16 }}
-            src="/signup/organization-details.png"
+            src={organizationdetails}
             alt="banner"
           />
         </li>
@@ -47,7 +49,7 @@ export default function Signup() {
           <img
             width={750}
             style={{ marginBottom: 16, marginTop: 16 }}
-            src="/signup/organization-address.png"
+            src={organizationaddress}
             alt="banner"
           />
         </li>
@@ -57,7 +59,7 @@ export default function Signup() {
           <img
             width={750}
             style={{ marginBottom: 16, marginTop: 16 }}
-            src="/signup/choose-plans.png"
+            src={chooseplans}
             alt="banner"
           />
         </li>
@@ -67,7 +69,7 @@ export default function Signup() {
           <img
             width={750}
             style={{ marginBottom: 16, marginTop: 16 }}
-            src="/signup/choose-depts.png"
+            src={choosedepts}
             alt="banner"
           />
         </li>
@@ -78,7 +80,7 @@ export default function Signup() {
           <img
             width={750}
             style={{ marginBottom: 16, marginTop: 16 }}
-            src="/signup/email-confirmation.png"
+            src={emailconfirmation}
             alt="banner"
           />
         </li>
@@ -159,10 +161,6 @@ export default function Signup() {
           {
             title: "Using the Documentation",
             id: "using-the-documentation",
-          },
-          {
-            title: "Foreword",
-            id: "foreword",
           },
         ]}
         content={content}

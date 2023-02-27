@@ -2,8 +2,6 @@ import React from 'react'
 
 
 const renderDocumentation = (item) => {
-
-
     return (
         <li className="bd-links-group py-2" key={item.url}>
             <strong className="bd-links-heading d-flex w-100 align-items-center fw-semibold">

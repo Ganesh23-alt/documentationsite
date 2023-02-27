@@ -1,5 +1,6 @@
 import DocumentationItemLayout from "../../layouts/documentation";
 import React from "react";
+import { img } from "../../assets/images/index.js";
 
 export default function Introduction() {
     const content = (
@@ -17,8 +18,8 @@ export default function Introduction() {
             <img
                 width={750}
                 style={{ marginBottom: 16 }}
-                src="/banner.png"
-                alt="banner"
+                src={img}
+                alt="img"
             />
             <p>
                 You can also customize the web address for your PharmacyXP account and

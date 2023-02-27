@@ -2,7 +2,7 @@ import React from 'react'
 
 const loading = () => {
     return (
-        <div>laoding</div>
+        <div>wait till page is laoding</div>
     )
 }
 
